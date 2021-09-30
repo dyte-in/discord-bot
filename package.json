@@ -2,12 +2,16 @@
   "name": "discord-bot",
   "version": "1.0.0",
   "description": "<!-- PROJECT LOGO --> <p align=\"center\">   <a href=\"https://dyte.in\">     <img src=\"https://dyte-uploads.s3.ap-south-1.amazonaws.com/dyte-logo-dark.svg\" alt=\"Logo\" width=\"80\">   </a>",
-  "main": "index.js",
+  "exports": "./dist/index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "dev": "ts-node-dev --respawn --transpile-only src/main.ts",
-    "deploy-commands": "ts-node src/deploy-commands.ts"
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "deploy-commands": "ts-node src/deploy-commands.ts",
+    "lint": "eslint --ext .ts,.js src",
+    "prestart": "node dist/deploy-commands.js",
+    "start": "node dist"
   },
   "repository": {
     "type": "git",
@@ -22,14 +26,17 @@
   "dependencies": {
     "@discordjs/builders": "^0.6.0",
     "@discordjs/rest": "^0.1.0-canary.0",
+    "axios": "^0.21.4",
     "discord-api-types": "^0.23.1",
     "discord.js": "^13.1.0",
     "dotenv": "^10.0.0",
+    "p-queue": "^6.6.2",
     "winston": "^3.3.3"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
     "@types/node": "^16.10.2",
+    "@types/node-fetch": "^2.5.10",
     "@typescript-eslint/eslint-plugin": "^4.32.0",
     "@typescript-eslint/parser": "^4.32.0",
     "eslint": "^7.32.0",

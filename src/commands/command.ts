@@ -11,14 +11,14 @@ const commandDefaults: CommandOptions = {
 
 type CommandHandler = (interaction: CommandInteraction | Message, ...args: string[]) => void;
 export default class Command {
-    command: SlashCommandBuilder;
+    command: SlashCommandBuilder | Omit<SlashCommandBuilder, 'addSubcommand' | 'addSubcommandGroup'>;
 
     options: CommandOptions;
 
     handler: CommandHandler;
 
     constructor(
-        command: SlashCommandBuilder,
+        command: SlashCommandBuilder | Omit<SlashCommandBuilder, 'addSubcommand' | 'addSubcommandGroup'>,
         handler: CommandHandler,
         options: CommandOptions = {
         },

@@ -2,11 +2,28 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
+const {
+    DISCORD_TOKEN: TOKEN = '',
+    PREFIX = '',
+    DEV_GUILD_ID = '',
+    DEV_CLIENT_ID = '',
+    DYTE_ORGANIZATION_ID = '',
+    DYTE_API_KEY = '',
+    DYTE_BASE_URL = '',
+    DYTE_CLIENT_URL = '',
+    RULES_AND_GUIDELINES_CHANNEL_ID = '',
+} = process.env;
+
 const config = {
-    TOKEN: process.env.DISCORD_TOKEN,
-    PREFIX: process.env.PREFIX,
-    DEV_GUILD_ID: process.env.DEV_GUILD_ID,
-    DEV_CLIENT_ID: process.env.DEV_CLIENT_ID,
+    TOKEN,
+    PREFIX,
+    DEV_GUILD_ID,
+    DEV_CLIENT_ID,
+    DYTE_ORGANIZATION_ID,
+    DYTE_API_KEY,
+    DYTE_BASE_URL,
+    DYTE_CLIENT_URL,
+    RULES_AND_GUIDELINES_CHANNEL_ID,
 };
 
 export default config;
