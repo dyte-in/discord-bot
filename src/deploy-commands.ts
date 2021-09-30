@@ -10,8 +10,19 @@ const slashCommands = commands.filter(
     (cmd) => cmd.options.isSlashCommand,
 ).map((cmd) => cmd.command.toJSON());
 
-rest.put(
-    Routes.applicationGuildCommands(config.DEV_CLIENT_ID, config.DEV_GUILD_ID),
-    { body: slashCommands },
-).then(() => logger.info('Successfully registered application commands.'))
-    .catch(logger.error);
+async function main() {
+    await rest.put(
+        Routes.applicationGuildCommands(config.DEV_CLIENT_ID, config.DEV_GUILD_ID),
+        { body: slashCommands },
+    );
+
+    logger.info('Registered Guild Command for Dyte Discord server');
+
+    await rest.put(
+        Routes.applicationCommands(config.DEV_CLIENT_ID),
+        { body: slashCommands },
+    );
+    logger.info('Registered Global Commands!');
+}
+
+main();
