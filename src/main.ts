@@ -1,6 +1,6 @@
 // Require the necessary discord.js classes
 import { Client, Intents } from 'discord.js';
-import { commands } from './commands';
+import commands from './commands';
 import config from './utils/config';
 
 import logger from './utils/logger';
