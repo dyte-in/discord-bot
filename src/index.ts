@@ -74,7 +74,7 @@ client.on('guildMemberAdd', async (member) => {
 `)
         .addFields([
             { name: ':mag: To know more about Dyte, visit us at:', value: 'https://dyte.io' },
-            { name: ':hammer: Start building on dyte by creating an account on:', value: 'https://dev.dyte.in' },
+            { name: ':hammer: Start building on Dyte by creating an account on:', value: 'https://dev.dyte.in' },
             { name: ':book: Access our documentation:', value: 'https://docs.dyte.in' },
 
         ])
