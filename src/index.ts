@@ -86,6 +86,7 @@ Make sure to read the guidelines on ${client.channels.cache.get(config.RULES_AND
 
 client.once('ready', () => {
     logger.info('Bot Ready');
+    client.user.setActivity('/dyte to create a meeting', { type: 'PLAYING' });
 });
 
 client.login(config.TOKEN);

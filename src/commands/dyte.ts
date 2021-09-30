@@ -6,7 +6,7 @@ import Command from './command';
 export default new Command(
     new SlashCommandBuilder()
         .setName('dyte')
-        .setDescription('Create a dyte meeting')
+        .setDescription('Create a Dyte meeting!')
         .addStringOption((option) => option.setName('meeting_name')
             .setDescription('The name of the meeting to be created')
             .setRequired(false)),
