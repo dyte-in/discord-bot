@@ -1,6 +1,6 @@
 import { SlashCommandBuilder } from '@discordjs/builders';
 import { CommandInteraction, Message } from 'discord.js';
-import getMeetingLink from '../utils/meeting';
+import { getMeetingLink } from '../utils';
 import Command from './command';
 
 export default new Command(
