@@ -36,7 +36,7 @@ suggestion: Description # if you want to suggest a better way to implement a fea
 ```
 ### Code Styleguide
 The code should satisfy the following:
-  - Have meaningful variable names, either in `snake_case` or `camelCase`.
+  - Have meaningful variable names, in `camelCase`.
   - Have no `lint` issues.
   - Have meaningful file names, directory names and directory structure.
   - Have a scope for easy fixing, refactoring and scaling.
