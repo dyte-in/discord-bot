@@ -1,6 +1,6 @@
 <!-- PROJECT LOGO -->
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <p align="center">
   <a href="https://dyte.in">
@@ -136,6 +136,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/roerohan"><img src="https://avatars.githubusercontent.com/u/42958812?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rohan Mukherjee</b></sub></a><br /><a href="https://github.com/dyte-in/discord-bot/commits?author=roerohan" title="Code">💻</a> <a href="https://github.com/dyte-in/discord-bot/commits?author=roerohan" title="Documentation">📖</a> <a href="#infra-roerohan" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+    <td align="center"><a href="https://github.com/thebongy"><img src="https://avatars.githubusercontent.com/u/7080652?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rishit Bansal</b></sub></a><br /><a href="https://github.com/dyte-in/discord-bot/commits?author=thebongy" title="Code">💻</a> <a href="https://github.com/dyte-in/discord-bot/commits?author=thebongy" title="Documentation">📖</a> <a href="#infra-thebongy" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
   </tr>
 </table>
 
