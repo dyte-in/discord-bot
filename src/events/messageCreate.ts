@@ -11,10 +11,23 @@ export default async function messageCreate(message: Message) {
 
     const command = commands.get(cmd);
 
+    const { allowedRoles } = command.options;
+
+    if (
+        allowedRoles?.length
+        && !message.member.roles.cache
+            .some(({ name }) => command.options.allowedRoles.includes(name))
+    ) {
+        await message.reply(`To run this command, you need to have at least one of the following roles: ${allowedRoles.map((role) => `\`${role}\``).join(', ')}`);
+
+        return;
+    }
+
     if (!command) {
         await message.reply({
             content: `Unknown command "${cmd}"`,
         });
+
         return;
     }
 

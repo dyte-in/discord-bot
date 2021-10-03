@@ -3,6 +3,7 @@ import { CommandInteraction, Message } from 'discord.js';
 
 interface CommandOptions {
     isSlashCommand?: boolean;
+    allowedRoles?: string[];
 }
 
 const commandDefaults: CommandOptions = {
