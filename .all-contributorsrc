@@ -15,6 +15,17 @@
         "doc",
         "infra"
       ]
+    },
+    {
+      "login": "thebongy",
+      "name": "Rishit Bansal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7080652?v=4",
+      "profile": "https://github.com/thebongy",
+      "contributions": [
+        "code",
+        "doc",
+        "infra"
+      ]
     }
   ],
   "contributorsPerLine": 7,
