@@ -1,4 +1,4 @@
-name: Release to GHR
+name: Create a new Release
 on:
   push:
     branches:
