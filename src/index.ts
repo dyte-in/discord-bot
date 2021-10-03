@@ -1,5 +1,5 @@
 import { Client, Intents } from 'discord.js';
-import { guildMemberAdd, interactionCreate, meetingCreate } from './events';
+import { guildMemberAdd, interactionCreate, messageCreate } from './events';
 import { config, logger } from './utils';
 
 const client = new Client({
@@ -14,7 +14,7 @@ const client = new Client({
 
 client.on('interactionCreate', interactionCreate);
 
-client.on('messageCreate', meetingCreate);
+client.on('messageCreate', messageCreate);
 
 client.on('guildMemberAdd', (member) => guildMemberAdd(client, member));
 
