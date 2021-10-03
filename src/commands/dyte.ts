@@ -11,7 +11,7 @@ export default new Command(
             .setDescription('The name of the meeting to be created')
             .setRequired(false)),
     async (interaction: CommandInteraction | Message, ...args: string[]) => {
-        await interaction.reply(await (await getMeetingLink(args[0] || (interaction as CommandInteraction).options?.getString('meeting_name'))).url);
+        await interaction.reply((await getMeetingLink(args[0] || (interaction as CommandInteraction).options?.getString('meeting_name'))).url);
     },
     {
         isSlashCommand: true,
