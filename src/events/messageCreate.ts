@@ -2,7 +2,7 @@ import { Message } from 'discord.js';
 import commands from '../commands';
 import { config, logger } from '../utils';
 
-export default async function meetingCreate(message: Message) {
+export default async function messageCreate(message: Message) {
     if (!message.content.startsWith(config.PREFIX)) return;
 
     const tokens = message.content.trim().split(/ +/g);
