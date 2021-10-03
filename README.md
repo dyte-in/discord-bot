@@ -4,19 +4,19 @@
     <img src="https://dyte-uploads.s3.ap-south-1.amazonaws.com/dyte-logo-dark.svg" alt="Logo" width="80">
   </a>
 
-  <h3 align="center">docs-template by dyte</h3>
+  <h3 align="center">discord-bot by dyte</h3>
 
   <p align="center">
-    ADD_DESCRIPTION_HERE
+    A Discord bot for Dyte's community Discord server.
     <br />
-    <a href="https://docs.dyte.in"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/dyte-in/discord-bot"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://app.dyte.in">View Demo</a>
+    <a href="https://community.dyte.io">View Demo</a>
     ·
-    <a href="https://github.com/dyte-in/docs-template/issues">Report Bug</a>
+    <a href="https://github.com/dyte-in/discord-bot/issues">Report Bug</a>
     ·
-    <a href="https://github.com/dyte-in/docs-template/issues">Request Feature</a>
+    <a href="https://github.com/dyte-in/discord-bot/issues">Request Feature</a>
   </p>
 </p>
 
@@ -42,19 +42,14 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+A multi-purpose Discord bot for [Dyte's Discord Community](https://community.dyte.io).
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`docs-template`
-
+<img src="./images/bot.png" width="250"></img>
 
 ### Built With
 
-* []()
-* []()
-* []()
-
+* [discord.js](https://discord.js.org/#/)
+* [Typescript](typescriptlang.org/)
 
 
 <!-- GETTING STARTED -->
@@ -64,38 +59,41 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+For running this bot, you would need to make create an application on Discord's developer portal, and create a bot in the application. Once this is done, you will receive the bot token, which you can use to run this project. You need to add your newly created bot to the Discord server you are going to use for testing.
+
+Other prerequisites include:
 * npm
-```sh
-npm install npm@latest -g
-```
 
 ### Installation
  
 1. Clone the repo
 ```sh
-git clone https://github.com/dyte-in/docs-template.git
+git clone git@github.com:dyte-in/discord-bot.git
 ```
 2. Install NPM packages
 ```sh
 npm install
 ```
-
+3. Create a `.env` from the sample `.env.example` and update the values
+```sh
+cp .env.example .env
+```
+4. Run the bot in developer mode using
+```sh
+npm run dev
+```
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)._
-
+This bot can be used on [Dyte's Discord Community](https://community.dyte.io). For example, you can head to the `#bot-spam` channel and run `/dyte` or `$dyte` to create a new Dyte meeting.
 
 
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/dyte-in/docs-template/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/dyte-in/discord-bot/issues) for a list of proposed features (and known issues).
 
 
 
