@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/dyte-in/discord-bot/compare/v1.0.0...v1.0.1) (2021-10-03)
+
+
+### Bug Fixes
+
+* **messagecreate:** rename meetingCreate to messageCreate ([40f5e88](https://github.com/dyte-in/discord-bot/commit/40f5e88904fe1ab8fe37ee6afdb1195c3427d89b))
+* **utils:** export utils from single index.ts file ([e753d0e](https://github.com/dyte-in/discord-bot/commit/e753d0ea27dae196afc9be4109fb5d93f6ab1b4e))
+
 # 1.0.0 (2021-10-03)
 
 
