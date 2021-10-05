@@ -1,5 +1,5 @@
 import { Message } from 'discord.js';
-import commands from '../commands';
+import { messageCommands } from '../commands/registerCommands';
 import { config, logger } from '../utils';
 
 export default async function messageCreate(message: Message) {
@@ -9,7 +9,9 @@ export default async function messageCreate(message: Message) {
     const cmd = tokens[0].slice(config.PREFIX.length).toLowerCase();
     const args = tokens.slice(1);
 
-    const command = commands.get(cmd);
+    const command = messageCommands.get(cmd);
+
+    if (!command) return;
 
     const { allowedRoles } = command.options;
 
@@ -19,14 +21,6 @@ export default async function messageCreate(message: Message) {
             .some(({ name }) => command.options.allowedRoles.includes(name))
     ) {
         await message.reply(`To run this command, you need to have at least one of the following roles: ${allowedRoles.map((role) => `\`${role}\``).join(', ')}`);
-
-        return;
-    }
-
-    if (!command) {
-        await message.reply({
-            content: `Unknown command "${cmd}"`,
-        });
 
         return;
     }
