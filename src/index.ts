@@ -1,6 +1,7 @@
 import { Client, Intents } from 'discord.js';
 import { guildMemberAdd, interactionCreate, messageCreate } from './events';
 import { config, logger } from './utils';
+import './commands';
 
 const client = new Client({
     intents: [

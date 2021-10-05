@@ -1,13 +1,11 @@
 import { REST } from '@discordjs/rest';
 import { Routes } from 'discord-api-types/v9';
-import commands from './commands';
+import { slashCommands as commands } from './commands';
 import { config, logger } from './utils';
 
 const rest = new REST({ version: '9' }).setToken(config.TOKEN);
 
-const slashCommands = commands.filter(
-    (cmd) => cmd.options.isSlashCommand,
-).map((cmd) => cmd.command.toJSON());
+const slashCommands = commands.map((cmd) => cmd.command.toJSON());
 
 async function main() {
     await rest.put(

@@ -12,6 +12,8 @@ const {
     DYTE_BASE_URL = '',
     DYTE_CLIENT_URL = '',
     RULES_AND_GUIDELINES_CHANNEL_ID = '',
+    ANNOUNCEMENTS_CHANNEL_ID = '',
+    BOT_TEST_CHANNEL_ID = '',
 } = process.env;
 
 const config = {
@@ -24,6 +26,8 @@ const config = {
     DYTE_BASE_URL,
     DYTE_CLIENT_URL,
     RULES_AND_GUIDELINES_CHANNEL_ID,
+    ANNOUNCEMENTS_CHANNEL_ID,
+    BOT_TEST_CHANNEL_ID,
 };
 
 export default config;
