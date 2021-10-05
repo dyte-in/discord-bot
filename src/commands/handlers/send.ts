@@ -3,6 +3,15 @@ import { registerMessageCommand } from '../registerCommands';
 import MessageCommand from '../MessageCommand';
 
 async function sendHandler(message: Message, channelId: string, ...content: string[]) {
+    if (!content.length) {
+        await message.reply(`Failed to execute command. The format is:
+\`\`\`
+$send #<channel-name> <content>
+\`\`\`
+        `);
+        return;
+    }
+
     let channel;
     try {
         const cid = channelId.replace(/<*#*>*/ig, '');
